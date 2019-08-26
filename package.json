@@ -1,0 +1,51 @@
+{
+  "name": "husky-ui",
+  "version": "1.0.0",
+  "description": "基于 vuejs 的 UI 组件库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode development",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengjiangjun/husky-ui.git"
+  },
+  "author": "fengjiangjun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengjiangjun/husky-ui/issues"
+  },
+  "homepage": "https://github.com/fengjiangjun/husky-ui#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.6.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "postcss": "^7.0.17",
+    "postcss-bem-latest": "^0.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-partial-import": "^4.1.0",
+    "postcss-salad": "^2.0.1",
+    "saladcss-bem": "^0.0.2",
+    "style-loader": "^0.23.1",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "vue-router": "^3.1.2"
+  }
+}
