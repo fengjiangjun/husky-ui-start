@@ -4,10 +4,14 @@ var path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const resolve = dir => path.join(__dirname, '.', dir)
 module.exports = {
-  entry: resolve('src/index.js'),
+  entry: {
+    'pc': resolve('site/pc/index.js'),
+    'mobile': resolve('site/mobile/index.js')
+  },
   output: {
     filename: '[name].[hash:6].js',
     path: resolve('dist'),
+    chunkFilename: 'async_[name].js'
     //publicPath: '/dist/'
   },
   module: {
@@ -19,6 +23,10 @@ module.exports = {
       {
         test: /\.vue$/,
         use: 'vue-loader'
+      },
+      {
+        test: /\.md$/,
+        use: ['vue-loader', '@vant/markdown-loader']
       },
       {
         test: /\.css$/,
@@ -101,13 +109,19 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new HtmlWebpackPlugin({
-      template: resolve('index.html')
+      chunks: ['pc'],
+      template: resolve('site/pc/index.html'),
+      filename: 'start.html'
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['mobile'],
+      template: resolve('site/mobile/index.html'),
+      filename: 'mobile.html'
     })
   ],
   devServer: {
     port: 8089,
     open: true,
-    contentBase: './dist',
 
     // hot: true
   }

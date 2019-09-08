@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode development",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "build-site": "webpack --mode production",
+    "pub-pages": " git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,7 @@
     "postcss-salad": "^2.0.1",
     "saladcss-bem": "^0.0.2",
     "style-loader": "^0.23.1",
+    "url-loader": "^2.1.0",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.0",
     "vue-style-loader": "^4.1.2",
@@ -46,6 +49,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "@vant/markdown-loader": "^2.2.0",
     "vue-router": "^3.1.2"
   }
 }
