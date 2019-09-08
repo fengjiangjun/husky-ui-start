@@ -8,7 +8,7 @@
         <router-view></router-view>
       </site-doc>
 
-      <site-demo src="http://localhost:8089/mobile.html#/button"></site-demo>
+      <site-demo :src="location.protocal + '//' +location.hostname +'/mobile.html#/button'"></site-demo>
     </div>
   </div>
 </template>

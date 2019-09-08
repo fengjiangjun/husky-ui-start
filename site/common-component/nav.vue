@@ -23,7 +23,7 @@
   </div>
 </template>
 <script>
-import Link from './link.vue'
+import Link from './link.vue';
 export default {
   name: 'site-nav',
   data () {

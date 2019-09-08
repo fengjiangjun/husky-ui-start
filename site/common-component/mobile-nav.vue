@@ -17,8 +17,6 @@ export default {
     group: Object
   },
   created () {
-    console.log('this.$vantLang', this.$vantLang);
-    console.log('this.base', this.base)
   },
   data () {
     console.log(this.$vantLang);

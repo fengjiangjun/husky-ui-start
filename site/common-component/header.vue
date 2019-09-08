@@ -10,7 +10,6 @@
              class='site-header-search' />
     </div>
     <div class='site-header-right'>
-
       <img src='https://b.yzcdn.cn/vant/logo/github.svg'
            class='site-header-img' />
       <div class='site-header-edition'>2.7.1</div>
