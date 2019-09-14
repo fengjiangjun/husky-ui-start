@@ -48,11 +48,6 @@ export default {
 </script>
 
 <style>
-.husky-app .husky-header .husky-button {
-  color: #969799 !important;
-  background-color: #fff !important;
-}
-
 .husky-app > .husky-header {
   background-color: #fff !important;
 }

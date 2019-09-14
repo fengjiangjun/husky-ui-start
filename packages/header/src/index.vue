@@ -49,7 +49,7 @@ export default {
     display: -webkit-box;
     display: flex;
     font-size: 14px;
-    height: 40px;
+    height: 41px;
     line-height: 1;
     padding: 0 10px;
     position: relative;

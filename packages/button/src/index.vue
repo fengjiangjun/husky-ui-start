@@ -89,7 +89,7 @@ export default {
     box-sizing: border-box;
     color: inherit;
     display: block;
-    font-size: 18px;
+    font-size: 14px;
     height: 41px;
     outline: 0;
     overflow: hidden;

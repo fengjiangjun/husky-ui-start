@@ -90,6 +90,15 @@ export default {
                 path: '/header',
                 name: 'Header 顶部导航栏'
               },
+              {
+                path: '/switch',
+                name: 'Switch 开关'
+              },
+              {
+                path: '/search',
+                name: 'search 搜索框'
+              },
+
 
               /*
               {

@@ -18,7 +18,7 @@ export function demoWrapper(module, name) {
     const camelizedName = camelize(name);
     Object.keys(config).forEach(key => {
       formattedI18n[key] = {
-        [camelizedName]: config[key];
+        [camelizedName]: config[key]
       };
     });
     Locale.add(formattedI18n);

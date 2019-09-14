@@ -6,7 +6,9 @@ const resolve = dir => path.join(__dirname, '.', dir)
 module.exports = {
   entry: {
     'pc': resolve('site/pc/index.js'),
-    'mobile': resolve('site/mobile/index.js')
+    'mobile': resolve('site/mobile/index.js'),
+    //'mobile': './src/index.js',
+    //'pc': './src/index.js'
   },
   output: {
     filename: '[name].[hash:6].js',
@@ -120,7 +122,7 @@ module.exports = {
     })
   ],
   devServer: {
-    port: 8089,
+    port: 8086,
     open: true,
 
     // hot: true
