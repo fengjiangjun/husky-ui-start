@@ -2,7 +2,7 @@
   <div class="site-header">
     <div class='site-header-left'>
       <div class="site-header-left1">
-        <img src="https://img.yzcdn.cn/vant/logo.png"
+        <img src="../../../src/assets/img/logo.png"
              class='site-header-logo' />
         <span class='site-header-name'>Husky</span>
       </div>

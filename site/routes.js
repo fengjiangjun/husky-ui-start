@@ -2,30 +2,16 @@ import Button from '../packages/button/demo/index.vue';
 import Vue from 'vue';
 import docConfig from './doc-config';
 import DemoList from './common-component/demo-list.vue';
-import {
-  demoWrapper
-} from './mobile/demo-common';
+import { demoWrapper } from './mobile/demo-common';
 import initIframe from './utils/initIframe';
 initIframe();
-/*
-export default [{
-  path: `/intro`,
-  //component: Header,
-  component: Button,
-  meta: {
-    lang: ''
-  }
-}]
-*/
-export default ({
-  isMobile,
-  componentMap
-}) => {
-
-  const route = [{
-    path: '*',
-    redirect: () => `/${Vue.prototype.$vantLang}/`
-  }];
+export default ({ isMobile, componentMap }) => {
+  const route = [
+    {
+      path: '*',
+      redirect: () => `/${Vue.prototype.$vantLang}/`
+    }
+  ];
 
   Object.keys(docConfig).forEach(lang => {
     if (isMobile) {
@@ -42,15 +28,11 @@ export default ({
         redirect: `/${lang}/button`
       });
     }
-    console.log('route', route)
 
     function addRoute(page, lang) {
-      let {
-        path
-      } = page;
+      let { path } = page;
       if (path) {
         path = path.replace('/', '');
-        console.log('path', path)
         let component;
         if (path === 'demo') {
           component = DemoPages;
@@ -97,6 +79,5 @@ export default ({
       }
     });
   });
-  console.log('routes', route)
   return route;
-}
+};

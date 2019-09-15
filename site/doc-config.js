@@ -1,25 +1,25 @@
-const github = "";
+const github = '';
 export default {
-  "zh-CN": {
+  'zh-CN': {
     header: {
       logo: {
-        image: "https://img.yzcdn.cn/vant/logo.png",
-        title: "Vant",
-        href: "#/"
+        image: './src/assets/img/logo.png',
+        title: 'Vant',
+        href: '#/'
       },
       nav: {
         lang: {
-          text: "En",
-          from: "zh-CN",
-          to: "en-US"
+          text: 'En',
+          from: 'zh-CN',
+          to: 'en-US'
         },
         logoLink: [
           {
-            image: "https://b.yzcdn.cn/vant/logo/weapp.svg",
-            url: "/vant-weapp"
+            image: 'https://b.yzcdn.cn/vant/logo/weapp.svg',
+            url: '/vant-weapp'
           },
           {
-            image: "https://b.yzcdn.cn/vant/logo/github.svg",
+            image: 'https://b.yzcdn.cn/vant/logo/github.svg',
             url: github
           }
         ]
@@ -27,43 +27,43 @@ export default {
     },
     nav: [
       {
-        name: "组件",
+        name: '组件',
         showInMobile: true,
         children: [
           {
-            name: "基础组件",
-            icon: "https://img.yzcdn.cn/vant/basic-0401.svg",
+            name: '基础组件',
+            icon: 'https://img.yzcdn.cn/vant/basic-0401.svg',
             children: [
               {
-                path: "/button",
-                name: "Button 按钮"
+                path: '/button',
+                name: 'Button 按钮'
               },
               {
-                path: "/cell",
-                name: "Cell 单元格"
+                path: '/cell',
+                name: 'Cell 单元格'
               },
               {
-                path: "/header",
-                name: "Header 顶部导航栏"
+                path: '/header',
+                name: 'Header 顶部导航栏'
               },
               {
-                path: "/switch",
-                name: "Switch 开关"
+                path: '/switch',
+                name: 'Switch 开关'
               },
               {
-                path: "/search",
-                name: "search 搜索框"
+                path: '/search',
+                name: 'search 搜索框'
               }
             ]
           },
 
           {
-            name: "营销组件",
-            icon: "https://img.yzcdn.cn/vant/form-0401.svg",
+            name: '营销组件',
+            icon: 'https://img.yzcdn.cn/vant/form-0401.svg',
             children: [
               {
-                path: "/wheel",
-                name: "大转盘"
+                path: '/wheel',
+                name: '大转盘'
               }
             ]
           }
@@ -72,22 +72,22 @@ export default {
     ]
   },
 
-  "en-US": {
+  'en-US': {
     header: {
       logo: {
-        image: "https://img.yzcdn.cn/vant/logo.png",
-        title: "Vant",
-        href: "#/"
+        image: 'https://img.yzcdn.cn/vant/logo.png',
+        title: 'Vant',
+        href: '#/'
       },
       nav: {
         lang: {
-          text: "中文",
-          from: "en-US",
-          to: "zh-CN"
+          text: '中文',
+          from: 'en-US',
+          to: 'zh-CN'
         },
         logoLink: [
           {
-            image: "https://b.yzcdn.cn/vant/logo/github.svg",
+            image: 'https://b.yzcdn.cn/vant/logo/github.svg',
             url: github
           }
         ]
@@ -95,20 +95,20 @@ export default {
     },
     nav: [
       {
-        name: "Components",
+        name: 'Components',
         showInMobile: true,
         children: [
           {
-            name: "Basic Components",
-            icon: "https://img.yzcdn.cn/vant/basic-0401.svg",
+            name: 'Basic Components',
+            icon: 'https://img.yzcdn.cn/vant/basic-0401.svg',
             children: [
               {
-                path: "/button",
-                name: "Button"
+                path: '/button',
+                name: 'Button'
               },
               {
-                path: "/cell",
-                name: "Cell"
+                path: '/cell',
+                name: 'Cell'
               }
             ]
           }

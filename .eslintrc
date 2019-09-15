@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": "off"
+  },
+  "extends": "standard",
+  "plugins": ["html"]
+}
